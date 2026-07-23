@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - College Fest 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>College Fest</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html" class="active">Register</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Event Registration</h1>
+    <p>Fill in the details below to register.</p>
+</section>
+
+<section class="form-section">
+
+<form id="registerForm">
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter your phone number" required>
+
+<label>Department</label>
+<select required>
+    <option value="">Select Department</option>
+    <option>Information Technology</option>
+    <option>Computer Science</option>
+    <option>ECE</option>
+    <option>EEE</option>
+    <option>Mechanical</option>
+    <option>Civil</option>
+</select>
+
+<label>Year</label>
+<select required>
+    <option value="">Select Year</option>
+    <option>I Year</option>
+    <option>II Year</option>
+    <option>III Year</option>
+    <option>IV Year</option>
+</select>
+
+<label>Select Event</label>
+<select required>
+    <option value="">Choose Event</option>
+    <option>Coding Contest</option>
+    <option>Hackathon</option>
+    <option>Paper Presentation</option>
+    <option>Quiz</option>
+    <option>Dance</option>
+    <option>Singing</option>
+    <option>BGMI Tournament</option>
+</select>
+
+<label>Why do you want to participate?</label>
+<textarea rows="5" placeholder="Write here..."></textarea>
+
+<button type="submit" class="btn">
+Register Now
+</button>
+
+</form>
+
+</section>
+
+<footer>
+    <p>© 2026 College Fest | All Rights Reserved</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Registration Successful!");
+
+this.reset();
+
+});
+</script>
+
+</body>
+</html>
